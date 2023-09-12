@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  @apply  box-border m-0 p-0
+}
+
+#root, body  {
+  @apply bg-main-blue text-white
+}
+
+body  {
+  @apply w-[1200px] m-auto
+}
+
+
