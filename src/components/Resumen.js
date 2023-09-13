@@ -1,5 +1,5 @@
-import styles from "../styles/Resumen.module.scss";
-import { IconEducation } from "./icons/IconEducation";
+/* import styles from "../styles/Resumen.module.scss";
+ */import { IconEducation } from "./icons/IconEducation";
 import { IconExperience } from "./icons/IconExperience";
 
 export const Resumen = () => {
@@ -11,8 +11,8 @@ export const Resumen = () => {
           Educación
         </h3>
         <div className="w-full flex gap-3 items-center relative">
-          <div className={styles.circle}></div>
-          <h4 className={styles.title4}>Cursos</h4>
+          <div className="absolute -left-3  w-6 h-6 bg-gradient-to-t from-[#0d86ff1b] to-[#0d86ff5f] inline-block  rounded-[50%]"></div>
+          <h4 className="text-lg font-Merriweather my-5 first-letter:text-[#d9dfda] z-10">Cursos</h4>
         </div>
           <div>
             <ul className=" list-disc ml-6 gap-4 mb-6">
@@ -27,8 +27,8 @@ export const Resumen = () => {
             </ul>
           </div>
           <div className="w-full flex gap-3 items-center relative">
-          <div className={styles.circle}></div>
-          <h4 className={styles.title4}>Formación superior</h4>
+          <div className="absolute -left-3  w-6 h-6 bg-gradient-to-t from-[#0d86ff1b] to-[#0d86ff5f] inline-block  rounded-[50%]"></div>
+          <h4 className="text-lg font-Merriweather my-5 first-letter:text-[#d9dfda] z-10">Formación superior</h4>
         </div>
         <div>
           <ul className=" list-disc ml-6">
@@ -46,7 +46,7 @@ export const Resumen = () => {
           <IconExperience iconStyle="w-8 h-8  fill-[#0D86FF]" /> Experiencia
         </h3>
         <div className="w-full flex gap-3 items-center relative">
-          <div className={styles.circle}></div>
+          <div className="absolute -left-3  w-6 h-6 bg-gradient-to-t from-[#0d86ff1b] to-[#0d86ff5f] inline-block  rounded-[50%]"></div>
           <h4 className={styles.title4}>Grifenix</h4>
           <p>(2022 nov - 2022 dic)</p>
         </div>
@@ -57,7 +57,7 @@ con registro de usuarios con validación de datos por Vue.js y Vue Validate.</p>
         </div>
 
         <div className="w-full flex gap-3 items-center relative">
-          <div className={styles.circle}></div>
+          <div className="absolute -left-3  w-6 h-6 bg-gradient-to-t from-[#0d86ff1b] to-[#0d86ff5f] inline-block  rounded-[50%]"></div>
           <h4 className={styles.title4}>Sagajean</h4>
           <p>(2023 abr - 2023 may)</p>
         </div>
