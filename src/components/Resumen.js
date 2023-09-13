@@ -47,7 +47,7 @@ export const Resumen = () => {
         </h3>
         <div className="w-full flex gap-3 items-center relative">
           <div className="absolute -left-3  w-6 h-6 bg-gradient-to-t from-[#0d86ff1b] to-[#0d86ff5f] inline-block  rounded-[50%]"></div>
-          <h4 className={styles.title4}>Grifenix</h4>
+          <h4 className="text-lg font-Merriweather my-5 first-letter:text-[#d9dfda] z-10">Grifenix</h4>
           <p>(2022 nov - 2022 dic)</p>
         </div>
         <div>
@@ -58,7 +58,7 @@ con registro de usuarios con validación de datos por Vue.js y Vue Validate.</p>
 
         <div className="w-full flex gap-3 items-center relative">
           <div className="absolute -left-3  w-6 h-6 bg-gradient-to-t from-[#0d86ff1b] to-[#0d86ff5f] inline-block  rounded-[50%]"></div>
-          <h4 className={styles.title4}>Sagajean</h4>
+          <h4 className="text-lg font-Merriweather my-5 first-letter:text-[#d9dfda] z-10">Sagajean</h4>
           <p>(2023 abr - 2023 may)</p>
         </div>
         <div>
