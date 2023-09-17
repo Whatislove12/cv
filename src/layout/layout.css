@@ -1,3 +1,19 @@
 nav .active {
     @apply text-white font-semibold
 }
+nav {
+   @apply absolute md:-right-8 -left-[1000px] top-0 md:w-3/4 ml-auto md:bg-[#0D86FF] rounded-3xl md:py-[18px]
+}
+ header button {
+    @apply md:-left-[1000px] absolute right-2 top-7 md:hidden
+}
+nav ul {
+    @apply md:flex md:flex-row md:justify-around flex flex-col gap-1
+}
+
+header .open {
+    @apply -right-8 -left-8 top-28 bg-[#272333f6] text-center text-xl p-6 w-[90%] mx-auto
+} 
+header div {
+    @apply flex justify-between 
+}

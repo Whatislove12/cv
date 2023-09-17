@@ -14,7 +14,7 @@ export const AboutMe = () => {
       </div>
       <div className=" font-mono">
         <h3 className="text-2xl font-Merriweather my-5">Aptitudes</h3>
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           <ul className={styles.column}>
             <li>JavaScript</li>
             <li>React.js</li>
