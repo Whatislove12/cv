@@ -4,8 +4,8 @@ import { IconExperience } from "./icons/IconExperience";
 
 export const Resumen = () => {
   return (
-    <div className="flex">
-      <div className=" w-1/2 px-4">
+    <div className="flex flex-col md:flex-row">
+      <div className=" md:w-1/2 px-4 w-full">
         <h3 className="text-2xl font-Merriweather my-5 flex gap-3 items-center">
           <IconEducation iconStyle="w-9 h-9  fill-[#0D86FF]" />
           Educación
@@ -41,7 +41,7 @@ export const Resumen = () => {
         </div>
       </div>
 
-      <div className=" w-1/2 px-4">
+      <div className=" md:w-1/2 px-4 w-full">
         <h3 className=" text-2xl font-Merriweather my-5 flex gap-3 items-center">
           <IconExperience iconStyle="w-8 h-8  fill-[#0D86FF]" /> Experiencia
         </h3>

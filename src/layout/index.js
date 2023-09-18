@@ -11,8 +11,13 @@ export const Layout = () => {
      */
   ];
 
+  const handleMenuToggle = () => {
+    const screenWidth = window.innerWidth;
+    if(screenWidth>768) setMenuOpen(false);
+    else setMenuOpen(!menuOpen)
+  }
+
   const [menuOpen, setMenuOpen] = useState(false);
-  const handleMenuToggle = () => setMenuOpen(!menuOpen);
 
   const location = useLocation();
   const pageName =
@@ -25,7 +30,7 @@ export const Layout = () => {
           <ul className=" ">
             {menu.map((item) => (
               <li key={item.url}>
-                <NavLink to={item.url} className="text-gray-200">
+                <NavLink to={item.url} onClick={handleMenuToggle} className="text-gray-200">
                   {item.name}
                 </NavLink>
               </li>
