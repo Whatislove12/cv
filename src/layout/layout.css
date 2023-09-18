@@ -8,7 +8,7 @@ nav {
     @apply md:-left-[1000px] absolute right-2 top-7 md:hidden
 }
 nav ul {
-    @apply md:bg-transparent md:flex md:flex-row md:justify-around flex flex-col gap-1 absolute left-0 right-0 bg-main-blue md:py-0 py-8 rounded-3xl -mt-3
+    @apply md:bg-transparent md:flex md:flex-row md:justify-around flex flex-col gap-1 absolute left-0 right-0 bg-main-blue md:py-0 py-8 rounded-3xl -mt-3 z-20
 }
 
 header .open {
