@@ -4,7 +4,16 @@ import { IconInstagram } from "./icons/IconInstagram";
 import { IconLinkedin } from "./icons/IconLinkedin";
 import { IconMail } from "./icons/IconMail";
 
+import { useTranslation } from 'react-i18next';
+
+
 export const ShortInformation = () => {
+
+  const { i18n } = useTranslation();
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <div className=" lg:w-[29%] flex flex-col  gap-6 justify-around lg:flex-col md:flex-row w-full h-full bg-main-containers rounded-3xl p-8">
       <div>
@@ -14,7 +23,11 @@ export const ShortInformation = () => {
           className=" object-cover h-52  w-52  m-auto rounded-3xl shadow-2xl"
         />
       </div>
-      <div className="flex flex-col gap-3 items-center pt-5 text-center">
+      <div className="flex flex-col gap-3 items-center text-center">
+      <div className="flex gap-2 -m-2">
+          <button onClick={() => changeLanguage("es")}><img src="/images/españa.png" alt="Bandera España" className=" w-8" /></button>
+          <button onClick={() => changeLanguage("en")}><img src="/images/estados-unidos.png" alt="Bandera Estados Unidos" className=" w-8 " /></button><br />
+        </div>
         <h3 className="text-xl font-serif ">
           Vladislav
           <span className=" font-semibold"> Podymskiy</span>
@@ -26,7 +39,7 @@ export const ShortInformation = () => {
           <IconGithub iconStyle="w-6 h-5 stroke-2  hover:fill-hover-yellow" />
           <IconInstagram iconStyle="w-5 h-5 stroke-1 fill-white hover:fill-hover-yellow" />
         </div>
-          <ButtonDescargar />
+            <ButtonDescargar />
       </div>
     </div>
   );

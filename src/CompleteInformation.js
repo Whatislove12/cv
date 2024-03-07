@@ -5,6 +5,7 @@ import { AboutMe } from "./components/AboutMe";
 import { Resumen } from "./components/Resumen";
 import { Portfolio } from "./components/Portfolio";
 import { Contacts } from "./components/Contacts";
+import { Translate } from "./components/Translate";
 
 export const CompleteInformation = () => {
 
@@ -17,6 +18,7 @@ export const CompleteInformation = () => {
           <Route path="/resumen" element={<Resumen />}/>
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="/translate" element={<Translate />} />
         </Route>
       </Routes>
     </Router>

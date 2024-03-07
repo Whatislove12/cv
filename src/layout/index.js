@@ -2,11 +2,20 @@ import { Outlet, NavLink, useLocation } from "react-router-dom";
 import "./layout.css";
 import { useState } from "react";
 
+import { useTranslation } from 'react-i18next';
+
+
 export const Layout = () => {
+
+  const { t} = useTranslation();
+
+
   const menu = [
-    { url: "/", name: "Sobre mi" },
-    { url: "/resumen", name: "Resumen" },
-    { url: "/portfolio", name: "Portafolio" },
+    { url: "/", name: t("about") },
+    { url: "/resumen", name: t("resumen") },
+    { url: "/portfolio", name: t("portafolio") },
+    /*{ url: "/translate", name: "translate" },*/
+
     /*     { url: "/contacts", name: "Contactos"}
      */
   ];
@@ -30,7 +39,7 @@ export const Layout = () => {
           <ul className=" ">
             {menu.map((item) => (
               <li key={item.url}>
-                <NavLink to={item.url} onClick={handleMenuToggle} className="text-gray-200">
+                <NavLink to={item.url} onClick={handleMenuToggle} className="text-gray-200 font-semibold">
                   {item.name}
                 </NavLink>
               </li>

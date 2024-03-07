@@ -1,5 +1,5 @@
 nav .active {
-    @apply text-white font-semibold
+    @apply text-white font-bold
 }
 nav {
    @apply absolute md:-right-8 -left-[1000px] top-0 md:w-3/4 ml-auto md:bg-[#0D86FF] rounded-3xl md:py-6

@@ -1,6 +1,9 @@
 import { IconClip } from "./icons/IconClip";
+import { useTranslation } from 'react-i18next';
+
 
 export const ButtonDescargar = () => {
+    const  {t} = useTranslation();
 
     const descargar = () => {
         const link = document.createElement("a");
@@ -12,7 +15,7 @@ export const ButtonDescargar = () => {
     return (
         <div>
             <button onClick={descargar} className=" flex gap-3 items-center text-2xl hover:text-hover-yellow">
-                Descargar CV
+                {t("download")}
                 <IconClip iconStyle="w-5 h-5" />
             </button>
         </div> 

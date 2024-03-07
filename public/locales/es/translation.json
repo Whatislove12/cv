@@ -1,0 +1,28 @@
+{
+    "text_about": "A la hora de trabajar soy una persona responsable, perseverante y con altos estándares. Me enfoco en la lógica para resolver problemas de forma eficaz. Soy flexible y adaptable, capaz de enfrentar desafíos y aprender rápidamente. Me intereso por las nuevas tecnologías y el crecimiento profesional me motiva a ampliar mis conocimientos y habilidades. Me gusta contribuir al éxito de los proyectos en los que participo.",
+    "text": "español",
+    "download": "Descargar CV",
+    "about": "Sobre mí", "resumen": "Resumen", "portafolio": "Portafolio",
+    "aptitudes": "Aptitudes",
+    "idiomas": "Idiomas",
+    "espanol": "Español",
+    "ingles": "Inglés",
+    "ruso": "Ruso",
+    "educacion": "Educación",
+    "cursos": "Cursos",  
+    "fecha_fp": "2022 oct - 2023 may. CIP FP Mislata (Valencia)",
+    "texto_fp": "FPGM Desarrollo de aplicaciones con tecnología web",
+    "fecha_rs": "2022 abr - 2022 jun. The Rolling Scopes (a distancia)",
+    "texto_rs": "FRONT-END STAGE, RS School",
+    "form_super": "Formación superior",
+    "fecha_aues": "2015 ago - 2019 jun. University of Power Engineering and Telecommunications Almaty, Kazajistán",
+    "texto_aues": "Grado en Ingeniería de energía térmica",
+    "experiencia": "Experiencia",
+    "fecha_grif": "(2022 nov - 2022 dic)",
+    "texto_grif": "He estado desarrollando interfaces de entrada de páginas web utilizando Vue.js. Estuve enfocado en el desarrollo de los componentes de formularios con registro de usuarios con validación de datos por Vue.js y Vue Validate.",
+    "fecha_sag": "2023 sept - actual (Valencia/España)",
+    "texto_sag": "Desarrollador web con experiencia en WordPress y PrestaShop. Especializado en diseño de páginas, tiendas en línea y sitios corporativos. Poseo habilidades de programación en JS, PHP y jQuery para agregar funcionalidades adicionales. Optimización SEO, accesibilidad y velocidad."
+
+
+
+}
