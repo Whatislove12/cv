@@ -17,3 +17,10 @@ header .open {
 header div {
     @apply flex justify-between 
 }
+.bottons_change_lng .active {
+    @apply font-bold
+}
+
+.bottons_change_lng .active img {
+    @apply shadow-[0_30px_25px_0px_rgba(255,255,255,0.05)]
+}

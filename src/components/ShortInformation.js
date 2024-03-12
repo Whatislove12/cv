@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ButtonDescargar } from "./ButtonDescargar";
 import { IconGithub } from "./icons/IconGithub";
 import { IconInstagram } from "./icons/IconInstagram";
@@ -10,8 +11,10 @@ import { useTranslation } from 'react-i18next';
 export const ShortInformation = () => {
 
   const { i18n } = useTranslation();
+  const[currentLanguage, setCurrentLanguage] = useState(i18n.language);
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    setCurrentLanguage(lng);
   };
 
   return (
@@ -24,9 +27,15 @@ export const ShortInformation = () => {
         />
       </div>
       <div className="flex flex-col gap-3 items-center text-center">
-      <div className="flex gap-2 -m-2">
-          <button onClick={() => changeLanguage("es")}><img src="/images/españa.png" alt="Bandera España" className=" w-8" /></button>
-          <button onClick={() => changeLanguage("en")}><img src="/images/estados-unidos.png" alt="Bandera Estados Unidos" className=" w-8 " /></button><br />
+        <div className="bottons_change_lng fixed top-0 right-0 flex gap-2 -m-2 bg-main-blue  2xl:p-6 sm:p-4 p-2 sm:text-base text-xs rounded-b-3xl z-40 ">
+          <button onClick={() => changeLanguage("es")} className={currentLanguage === "es" ? "active" : ""}>
+            <img src="/images/españa.png" alt="Bandera España" className=" w-6 " />
+            Es
+          </button>
+          <button onClick={() => changeLanguage("en")} className={currentLanguage === "en" ? "active" : ""}>
+            <img src="/images/estados-unidos.png" alt="Bandera Estados Unidos" className="w-6" />
+            En
+          </button><br />
         </div>
         <h3 className="text-xl font-serif ">
           Vladislav
@@ -39,7 +48,7 @@ export const ShortInformation = () => {
           <IconGithub iconStyle="w-6 h-5 stroke-2  hover:fill-hover-yellow" />
           <IconInstagram iconStyle="w-5 h-5 stroke-1 fill-white hover:fill-hover-yellow" />
         </div>
-            <ButtonDescargar />
+        <ButtonDescargar />
       </div>
     </div>
   );
