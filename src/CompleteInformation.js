@@ -10,7 +10,7 @@ import { Translate } from "./components/Translate";
 export const CompleteInformation = () => {
 
   return (
-    <div className=" w-full lg:w-[71%] bg-main-containers h-auto rounded-3xl p-8 pt-0 mt-0 ">
+    <div className=" w-full lg:w-[71%] bg-main-containers h-auto rounded-3xl p-8 pt-0 mt-0">
     <Router >
       <Routes>
         <Route path="/" element={<Layout />}>

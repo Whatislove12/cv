@@ -4,6 +4,16 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'bg1': "url('/public/images/bg1.jpg')",
+        'bg2': "url('/public/images/bg2.jpg')",
+        'bg3': "url('/public/images/bg3.png')",
+        'bg4': "url('/public/images/bg4.jpg')",
+        'bg5': "url('/public/images/bg5.jpg')",
+        'bg6': "url('/public/images/bg6.jpg')"
+
+
+      },
       fontFamily: {
         "Merriweather": ["Merriweather", "serif"] ,
         "Montserrat": ["Montserrat Alternates", "sans-serif"], 

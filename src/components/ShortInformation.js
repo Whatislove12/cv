@@ -18,7 +18,7 @@ export const ShortInformation = () => {
   };
 
   return (
-    <div className=" lg:w-[29%] flex flex-col  gap-6 justify-around lg:flex-col md:flex-row w-full h-full bg-main-containers rounded-3xl p-8">
+    <div className=" lg:sticky lg:top-6  lg:w-[29%] flex flex-col  gap-6 justify-around lg:flex-col md:flex-row w-full h-full bg-main-containers rounded-3xl p-8">
       <div>
         <img
           src="/images/me2.jpeg"

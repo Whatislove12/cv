@@ -8,7 +8,11 @@
 }
 
 #root, body  {
-  @apply bg-main-blue text-white
+  @apply text-white
+}
+
+body  {
+  @apply bg-main-containers  bg-bg5 bg-cover bg-top  bg-no-repeat 
 }
 
 body  {
