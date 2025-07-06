@@ -16,8 +16,7 @@ export const Layout = () => {
     { url: "/portfolio", name: t("portafolio") },
     /*{ url: "/translate", name: "translate" },*/
 
-    /*     { url: "/contacts", name: "Contactos"}
-     */
+    { url: "/contacts", name: "Contactos"}
   ];
 
   const handleMenuToggle = () => {
