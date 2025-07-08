@@ -17,7 +17,7 @@ export const Contacts = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8080/contact", {
+      const response = await fetch("https://cv-backend-wks3.onrender.com/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
