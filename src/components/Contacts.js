@@ -1,14 +1,77 @@
-import { GoogleMapa } from "./GoogleMapa"
+import React, { useState } from "react";
+import { GoogleMapa } from "./GoogleMapa";
 
 export const Contacts = () => {
-    
-    return (
-        <div>
-            <GoogleMapa />
-            <div>
-                <h3>Formulario de contacto</h3>
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: ""
+  });
 
-            </div>
-        </div>
-    )
-}
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost:8080/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(form)
+      });
+
+      if (response.ok) {
+        alert("Сообщение отправлено!");
+        setForm({ name: "", phone: "", email: "", message: "" }); // очистка формы
+      } else {
+        alert("Ошибка при отправке сообщения.");
+      }
+    } catch (error) {
+      alert("Сервер недоступен. Проверь backend.");
+      console.error(error);
+    }
+  };
+
+  return (
+    <div>
+      {/*<GoogleMapa />*/}
+      <h3>Formulario de contacto</h3>
+
+      <form onSubmit={handleSubmit}>
+        <input
+          name="name"
+          placeholder="Имя"
+          value={form.name}
+          onChange={handleChange}
+          required
+        />
+        <input
+          name="phone"
+          placeholder="Телефон"
+          value={form.phone}
+          onChange={handleChange}
+        />
+        <input
+          name="email"
+          placeholder="Email"
+          value={form.email}
+          onChange={handleChange}
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Сообщение"
+          value={form.message}
+          onChange={handleChange}
+          required
+        />
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  );
+};
