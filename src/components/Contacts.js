@@ -42,7 +42,7 @@ export const Contacts = () => {
       {/*<GoogleMapa />*/}
       <h3>Formulario de contacto</h3>
 
-      <form onSubmit={handleSubmit}>
+      <form className="contact_form flex flex-col gap-3" onSubmit={handleSubmit}>
         <input
           name="name"
           placeholder="Имя"

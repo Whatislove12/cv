@@ -24,3 +24,10 @@ header div {
 .bottons_change_lng .active img {
     @apply shadow-[0_30px_25px_0px_rgba(255,255,255,0.05)]
 }
+.contact_form input, .contact_form textarea {
+    @apply rounded-lg text-black p-2 rounded-lg 
+}
+.contact_form button {
+    @apply bg-slate-800 rounded-lg text-white w-48 px-10 py-4
+}
+h3 { @apply text-2xl font-Merriweather my-8 flex gap-3 items-center}
